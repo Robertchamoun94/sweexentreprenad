@@ -577,3 +577,154 @@ footer {
     flex-direction: column;
   }
 }
+/* FIX: Mobilanpassning utan att ändra temat */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  min-width: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 920px) {
+  .desktop-nav,
+  .nav-phone {
+    display: none !important;
+  }
+
+  .topbar,
+  .nav,
+  .hero,
+  .section,
+  .about,
+  .contact,
+  footer {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: calc(100% - 32px);
+    max-width: 100%;
+  }
+
+  .nav {
+    min-height: 74px;
+    justify-content: center;
+  }
+
+  .brand img {
+    height: 44px;
+  }
+
+  .hero {
+    padding: 44px 0 52px;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .contact-box {
+    grid-template-columns: 1fr !important;
+    gap: 28px;
+  }
+
+  .service-grid,
+  .feature-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-content,
+  .hero-panel,
+  .logo-card,
+  .quick-card,
+  .service-card,
+  .contact-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  h1 {
+    font-size: clamp(28px, 8.5vw, 36px) !important;
+    line-height: 1.08;
+    letter-spacing: -0.6px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  h2 {
+    font-size: clamp(26px, 8vw, 32px) !important;
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-text,
+  .section-head p,
+  .service-card p,
+  .about-content p,
+  .contact-box p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero-actions,
+  .contact-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn,
+  .contact-link {
+    width: 100%;
+    max-width: 100%;
+    min-height: 54px;
+    padding: 0 14px;
+    font-size: 15px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .feature-grid div {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .feature-grid div:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  h1 {
+    font-size: 30px !important;
+  }
+
+  .brand img {
+    height: 40px;
+  }
+
+  .contact-box {
+    padding: 26px 18px;
+  }
+}
