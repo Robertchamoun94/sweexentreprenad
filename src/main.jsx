@@ -221,7 +221,7 @@ function App() {
     Hemsida skapad av <strong>TechFront</strong>
   </span>
 
-  <img src="/techfront.png" alt="TechFront" />
+
 </a>
 
   </div>
