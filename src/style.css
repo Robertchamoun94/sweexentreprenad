@@ -642,8 +642,8 @@ footer {
 }
 
 .techfront-credit img {
-  width: 42px;
-  height: 42px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
@@ -660,7 +660,9 @@ footer {
 
   font-family: Arial, Helvetica, sans-serif;
 
-  font-size: 15px;
+  font-size: 11px;
+
+  line-height: 1;
 
   font-weight: 900;
 
