@@ -205,11 +205,27 @@ function App() {
       </main>
 
       <footer>
-        <div className="container footer-inner">
-          <span>© {new Date().getFullYear()} SWE-EX Entreprenad AB</span>
-          <span>Bygg • Renovering • El • VVS • Fastighetsskötsel</span>
-        </div>
-      </footer>
+  <div className="container footer-inner">
+
+    <span>
+      © {new Date().getFullYear()} SWE-EX Entreprenad AB
+    </span>
+
+    <a
+  href="https://techfront.se"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="techfront-credit"
+>
+  <span>
+    Hemsida skapad av <strong>TechFront</strong>
+  </span>
+
+  <img src="/techfront.png" alt="TechFront" />
+</a>
+
+  </div>
+</footer>
     </>
   );
 }

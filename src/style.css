@@ -629,3 +629,49 @@ footer {
     padding: 26px 18px;
   }
 }
+.techfront-credit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: white;
+
+  font-weight: 700;
+
+  transition: 0.2s;
+}
+
+.techfront-credit img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.techfront-credit strong {
+  background: linear-gradient(
+    90deg,
+    #7bc3ff,
+    #0b63e5,
+    #9ad4ff
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  letter-spacing: 4px;
+
+  display: inline-block;
+}
+
+.techfront-credit:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
