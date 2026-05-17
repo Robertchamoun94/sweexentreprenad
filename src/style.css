@@ -24,10 +24,19 @@
 
 * {
   box-sizing: border-box;
+  min-width: 0;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -41,6 +50,7 @@ body {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 a {
@@ -65,7 +75,7 @@ a {
 }
 
 .nav {
-  min-height: 86px;
+  min-height: 92px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,7 +83,7 @@ a {
 }
 
 .brand img {
-  height: 62px;
+  height: 92px;
   width: auto;
 }
 
@@ -195,6 +205,23 @@ h3 {
   gap: 14px;
   flex-wrap: wrap;
   margin-top: 32px;
+}
+
+/* TRUST ROW */
+
+.trust-row {
+  margin-top: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.trust-row span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--steel);
 }
 
 .btn,
@@ -488,114 +515,10 @@ footer {
   font-weight: 700;
 }
 
-/* TABLET */
-
-@media (max-width: 560px) {
-  .container {
-    width: min(100% - 32px, 1180px);
-  }
-
-  .nav {
-    min-height: 72px;
-  }
-
-  .brand img {
-    height: 44px;
-  }
-
-  .nav-phone {
-    display: none;
-  }
-
-  .hero {
-    padding: 42px 0 48px;
-  }
-
-  .hero-grid {
-    gap: 28px;
-  }
-
-  .eyebrow {
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    line-height: 1.4;
-  }
-
-  h1 {
-    font-size: clamp(30px, 10vw, 38px);
-    line-height: 1.05;
-    letter-spacing: -0.8px;
-    word-break: normal;
-    overflow-wrap: break-word;
-  }
-
-  h2 {
-    font-size: clamp(26px, 8vw, 32px);
-    line-height: 1.08;
-  }
-
-  .hero-text,
-  .section-head p,
-  .service-card p,
-  .about-content p,
-  .contact-box p {
-    font-size: 16px;
-    line-height: 1.65;
-  }
-
-  .hero-actions,
-  .contact-actions {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .btn,
-  .contact-link {
-    width: 100%;
-    min-height: 54px;
-    padding: 0 16px;
-    font-size: 15px;
-    white-space: normal;
-    text-align: center;
-  }
-
-  .section,
-  .about,
-  .contact {
-    padding: 58px 0;
-  }
-
-  .contact-box {
-    padding: 26px 18px;
-  }
-
-  .service-card {
-    padding: 24px;
-  }
-
-  .quick-card {
-    flex-direction: column;
-  }
-}
-/* FIX: Mobilanpassning utan att ändra temat */
-html,
-body,
-#root {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-* {
-  min-width: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+/* RESPONSIVE */
 
 @media (max-width: 920px) {
+
   .desktop-nav,
   .nav-phone {
     display: none !important;
@@ -619,12 +542,12 @@ img {
   }
 
   .nav {
-    min-height: 74px;
+    min-height: 84px;
     justify-content: center;
   }
 
   .brand img {
-    height: 44px;
+    height: 64px;
   }
 
   .hero {
@@ -653,35 +576,15 @@ img {
     max-width: 100%;
   }
 
-  .eyebrow {
-    font-size: 11px;
-    letter-spacing: 1.2px;
-    line-height: 1.35;
-    overflow-wrap: anywhere;
-  }
-
   h1 {
     font-size: clamp(28px, 8.5vw, 36px) !important;
     line-height: 1.08;
     letter-spacing: -0.6px;
-    max-width: 100%;
-    overflow-wrap: anywhere;
-    word-break: normal;
   }
 
   h2 {
     font-size: clamp(26px, 8vw, 32px) !important;
     line-height: 1.08;
-    overflow-wrap: anywhere;
-  }
-
-  .hero-text,
-  .section-head p,
-  .service-card p,
-  .about-content p,
-  .contact-box p {
-    font-size: 16px;
-    line-height: 1.6;
   }
 
   .hero-actions,
@@ -712,16 +615,17 @@ img {
 }
 
 @media (max-width: 420px) {
+
   .container {
     width: calc(100% - 28px);
   }
 
-  h1 {
-    font-size: 30px !important;
+  .brand img {
+    height: 58px;
   }
 
-  .brand img {
-    height: 40px;
+  h1 {
+    font-size: 30px !important;
   }
 
   .contact-box {
