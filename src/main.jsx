@@ -162,13 +162,7 @@ function App() {
 
         <section id="om" className="about">
           <div className="container about-grid">
-            <div className="about-image">
-              <div className="machine-shape">
-                <HardHat size={86} />
-                <span>BYGG • VVS • EL</span>
-              </div>
-            </div>
-
+            
             <div className="about-content">
               <p className="eyebrow">OM OSS</p>
               <h2>Robust utförande med fokus på kvalitet</h2>

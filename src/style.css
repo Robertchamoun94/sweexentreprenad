@@ -411,10 +411,7 @@ h3 {
 }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 54px;
-  align-items: center;
+  display: block;
 }
 
 .about-image {
